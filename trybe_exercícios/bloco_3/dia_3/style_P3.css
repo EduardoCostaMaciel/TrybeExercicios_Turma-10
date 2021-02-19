@@ -8,3 +8,6 @@ li:hover {
 a:active {
     color: red;
 }
+li {
+    list-style: none;
+}
