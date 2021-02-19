@@ -3,4 +3,8 @@ h1,p {
 }
 li:hover {
     background-color: burlywood;
+    
+}
+li:active {
+    color: white;
 }
