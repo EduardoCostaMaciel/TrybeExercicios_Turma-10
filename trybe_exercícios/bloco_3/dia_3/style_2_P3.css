@@ -1,8 +1,21 @@
 div:hover {
     border-style: outset;
 }
-
-
+div:nth-last-of-type(1) {
+    color: yellowgreen;
+}
+div:nth-last-of-type(2) {
+    color: yellow;
+}
+div:nth-last-of-type(3) {
+    color: tomato;
+}
+div:nth-last-of-type(4) {
+    color: teal;
+}
+div:nth-last-of-type(5) {
+    color: seagreen;
+}
 
 
 
