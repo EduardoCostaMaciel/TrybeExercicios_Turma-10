@@ -1,5 +1,6 @@
 div:hover {
     border-style: outset;
+    border-color: darkgreen;
 }
 div:nth-last-of-type(1) {
     color: yellowgreen;
@@ -15,6 +16,21 @@ div:nth-last-of-type(4) {
 }
 div:nth-last-of-type(5) {
     color: seagreen;
+}
+h3:lang(a) {
+    background-color: skyblue;
+}
+h3:lang(b) {
+    background-color: darkgray;
+}
+h3:lang(c) {
+    background-color: tan;
+}
+h3:lang(d) {
+    background-color: wheat;
+}
+h3:lang(e) {
+    background-color:turquoise;
 }
 
 
