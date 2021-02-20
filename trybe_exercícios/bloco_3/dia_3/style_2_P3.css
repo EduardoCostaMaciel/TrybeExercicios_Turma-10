@@ -1,8 +1,7 @@
 div:hover {
     border-style: outset;
     border-color: darkgreen;
-    
-    
+     
 }
 div:nth-last-of-type(1) {
     color: yellowgreen;
@@ -12,11 +11,12 @@ div:nth-last-of-type(2) {
 }
 div:nth-last-of-type(3) {
     color: tomato;
-    padding-block: 20px;
-    font-size: 20px;
+    width: 300px;
+    font-size: 30px;
 }
 div:nth-last-of-type(4) {
     color: teal;
+    
 }
 div:nth-last-of-type(5) {
     color: seagreen;
@@ -25,6 +25,7 @@ h3:lang(a) {
     background-color: skyblue;
     text-align: center;
     width: 180px;
+
 }
 h3:lang(b) {
     background-color: darkgray;
@@ -34,7 +35,7 @@ h3:lang(b) {
 h3:lang(c) {
     background-color: tan;
     text-align: center;
-    width: 180px;
+    
 }
 h3:lang(d) {
     background-color: wheat;
@@ -46,7 +47,9 @@ h3:lang(e) {
     text-align: center;
     width: 180px;
 }
-
+div:nth-of-type(odd) {
+    font-style: italic;
+}
 
 
 
