@@ -1,0 +1,68 @@
+div:hover {
+    border-style: outset;
+    border-color: darkgreen;
+     
+}
+div:nth-last-of-type(1) {
+    color: yellowgreen;
+}
+div:nth-last-of-type(2) {
+    color: yellow;
+}
+div:nth-last-of-type(3) {
+    color: tomato;
+    width: 300px;
+    font-size: 30px;
+}
+div:nth-last-of-type(4) {
+    color: teal;
+    
+}
+div:nth-last-of-type(5) {
+    color: seagreen;
+}
+h3:lang(a) {
+    background-color: skyblue;
+    text-align: center;
+    width: 180px;
+
+}
+h3:lang(b) {
+    background-color: darkgray;
+    text-align: center;
+    width: 180px;
+}
+h3:lang(c) {
+    background-color: tan;
+    text-align: center;
+    
+}
+h3:lang(d) {
+    background-color: wheat;
+    text-align: center;
+    width: 180px;
+}
+h3:lang(e) {
+    background-color:turquoise;
+    text-align: center;
+    width: 180px;
+}
+div:nth-of-type(odd) {
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Para o próximo exercício, você não deve atribuir nenhuma classe ou id aos componentes, mas apenas utilizar pseudoclasses para individualizar cada elemento!*/
