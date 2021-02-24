@@ -6,3 +6,13 @@ let b = 4;
     console.log(a*b);
     console.log(a/b);
     console.log(a%b);
+/*2-Faça um programa que retorne o maior de dois números. Defina no começo do programa duas variáveis com os valores que serão comparados. (ok)*/
+let maiorQue = 15;
+let maiorQueOutro = 30;
+    if (maiorQue > maiorQueOutro) {
+        console.log(15);
+    }else if (maiorQue < maiorQueOutro) {
+        console.log(30);
+    }else{
+        console.log(0);
+    }
