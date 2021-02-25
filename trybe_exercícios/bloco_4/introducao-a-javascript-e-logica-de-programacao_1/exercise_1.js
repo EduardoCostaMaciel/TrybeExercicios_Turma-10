@@ -75,3 +75,12 @@ let convercaoDeNota = '60';
     }else {
         console.log('Não é uma nota')
     }
+/*8-Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .(ok)*/
+let numero1 = 10;
+let numero2 = 15;
+let numero3 = 3;
+    if (numero1 % 2 == 0 || numero2 % 2 == 0 || numero3 % 2 == 0) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
