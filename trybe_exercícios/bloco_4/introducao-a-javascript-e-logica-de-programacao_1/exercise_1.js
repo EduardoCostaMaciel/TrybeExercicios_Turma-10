@@ -29,3 +29,12 @@ let maiorQc = 80;
     }else {
         console.log(0);
     }
+/*4-Faça um programa que, dado um valor definido numa variável, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.(ok)*/
+let valorIndefinido = -10;
+    if(valorIndefinido > 0) {
+        console.log('positive');
+    }else if (valorIndefinido < 0) {
+        console.log('negative');
+    }else {
+        console.log('zero')
+    }
