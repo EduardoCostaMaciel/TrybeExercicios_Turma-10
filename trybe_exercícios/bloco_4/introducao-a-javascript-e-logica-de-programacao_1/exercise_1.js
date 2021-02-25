@@ -38,3 +38,12 @@ let valorIndefinido = -10;
     }else {
         console.log('zero')
     }
+/*5-Faça um programa que defina três variáveis com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false caso contrário.(ok)*/
+let anguloInternoA = 50;
+let anguloInternoB = 50;
+let anguloInternoC = 80;
+    if (anguloInternoA + anguloInternoB + anguloInternoC == 180){
+        console.log(true);
+    }else{
+        console.log(false);
+    }
