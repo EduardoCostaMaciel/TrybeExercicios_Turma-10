@@ -47,3 +47,12 @@ let anguloInternoC = 80;
     }else{
         console.log(false);
     }
+/*6-Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.(ok)*/
+let movePecaDeXadrez = 'cavalo';
+    if ( movePecaDeXadrez == 'cavalo' || movePecaDeXadrez == 'CAVALO' ) {
+        console.log('move em l')
+    }else if (movePecaDeXadrez == 'rainha' || movePecaDeXadrez == 'RAINHA') {
+        console.log('move para todos os lados')
+    }else{
+        console.log('Não é uma peça de xadrez')
+    }
