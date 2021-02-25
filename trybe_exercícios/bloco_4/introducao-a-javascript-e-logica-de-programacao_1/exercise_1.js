@@ -93,3 +93,18 @@ let num3 = 10;
     }else {
         console.log(false);
     }
+/*10-Escreva um programa que se inicie com dois valores em duas variáveis diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.(ok)*/
+let custoProduto = 20 ;
+let valorDeVendaDoProd = 30;
+const imposto = 20/100;
+let produtosVendidos = 1000;
+valorCustoTotal = ((custoProduto + imposto) * produtosVendidos);
+valorTotalProdutosVendidos = valorDeVendaDoProd * produtosVendidos;
+let lucro = valorTotalProdutosVendidos - valorCustoTotal ;
+    if (lucro > 0) {
+        console.log('Obteve algum lucro !');
+    } else if(lucro < 0){
+        console.log ('Não obteve lucro !')
+    }else {
+        console.log('Valor indefinido')
+    }
