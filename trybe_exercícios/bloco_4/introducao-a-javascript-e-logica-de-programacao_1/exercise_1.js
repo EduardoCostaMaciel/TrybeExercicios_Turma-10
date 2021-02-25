@@ -108,3 +108,40 @@ let lucro = valorTotalProdutosVendidos - valorCustoTotal ;
     }else {
         console.log('Valor indefinido')
     }
+/*11-Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.(ok)*/
+let salarioBruto = 3000;
+let inssAliquota1 = ((8 /100)*salarioBruto);
+let inssAliquota2 = ((9/100)*salarioBruto);
+let inssAliquota3 = ((11/100)*salarioBruto);
+let inssAliquota4 = 570.88;
+
+    if (salarioBruto <= 1556.94) {
+        console.log(salarioBruto - inssAliquota1);
+    }else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92) {
+        console.log(salarioBruto - inssAliquota2);
+    }else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82){
+        console.log(salarioBruto - inssAliquota3)
+    }else if (salarioBruto > 5189.82){
+        console.log(salarioBruto - inssAliquota4)
+    }else{
+        console.log('Valor Invalido !')
+    }
+const irAliquota1 = 0;
+let irAliquota2 = (7.5/100)*salarioBruto;
+let irAliquota3 = (15/100)*salarioBruto;
+let irAliquota4 = (22.5/100)*salarioBruto;
+let irAliquota5 = (27.5/100)*salarioBruto;
+    if(salarioBruto <= 1903.98){
+        console.log(salarioBruto - irAliquota1);
+    }else if (salarioBruto >= 1903.99 && salarioBruto <= 2826.65){
+        console.log(salarioBruto - irAliquota2 - 142.80);
+    }else if (salarioBruto >= 2826.66 && salarioBruto <= 3751.05){
+        console.log(salarioBruto - irAliquota3 - 354.80);
+    }else if (salarioBruto >= 3751.06 && salarioBruto <= 4664.68){
+        console.log(salarioBruto - irAliquota4 - 636.13);
+    }else if (salarioBruto > 4664.68){
+        console.log(salarioBruto - irAliquota5 - 869.36);
+    }else{
+        console.log('Valor invalido !')
+    }
+
