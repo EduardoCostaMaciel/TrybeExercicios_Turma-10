@@ -50,9 +50,28 @@ let anguloInternoC = 80;
 /*6-Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.(ok)*/
 let movePecaDeXadrez = 'cavalo';
     if ( movePecaDeXadrez == 'cavalo' || movePecaDeXadrez == 'CAVALO' ) {
-        console.log('move em l')
+        console.log('move em l');
     }else if (movePecaDeXadrez == 'rainha' || movePecaDeXadrez == 'RAINHA') {
-        console.log('move para todos os lados')
+        console.log('move para todos os lados');
     }else{
-        console.log('Não é uma peça de xadrez')
+        console.log('Não é uma peça de xadrez');
+    }
+/*7-Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:(ok)*/
+let convercaoDeNota = '60';
+    if (convercaoDeNota >= 90) {
+        console.log('A');
+    }else if (convercaoDeNota >= 80) {
+        console.log('B');
+    }else if (convercaoDeNota >= 70) {
+        console.log('C');
+    }else if (convercaoDeNota >= 60) {
+        console.log('D');
+    }else if (convercaoDeNota >= 50) {
+        console.log('E');
+    }else if (convercaoDeNota < 50) {
+        console.log('F')   
+    }else if (convercaoDeNota < 0 && convercaoDeNota > 100) {
+        console.log('Erro notas invalidas !')
+    }else {
+        console.log('Não é uma nota')
     }
