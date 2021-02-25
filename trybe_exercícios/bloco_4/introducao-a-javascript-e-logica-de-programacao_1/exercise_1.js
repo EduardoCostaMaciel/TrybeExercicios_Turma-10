@@ -84,3 +84,12 @@ let numero3 = 3;
     } else {
         console.log(false);
     }
+/*9-Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .(ok)*/
+let num1 = 4;
+let num2 = 2;
+let num3 = 10;
+    if (num1 % 2 == 1 || num2 % 2 == 1 || num3 % 2 == 1) {
+        console.log(true);
+    }else {
+        console.log(false);
+    }
