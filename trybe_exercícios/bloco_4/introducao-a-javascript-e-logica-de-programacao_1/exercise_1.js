@@ -87,7 +87,7 @@ let numero3 = 3;
 /*9-Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .(ok)*/
 let num1 = 4;
 let num2 = 2;
-let num3 = 10;
+let num3 = 11;
     if (num1 % 2 == 1 || num2 % 2 == 1 || num3 % 2 == 1) {
         console.log(true);
     }else {
@@ -126,6 +126,7 @@ let inssAliquota4 = 570.88;
     }else{
         console.log('Valor Invalido !')
     }
+
 const irAliquota1 = 0;
 let irAliquota2 = (7.5/100)*salarioBruto;
 let irAliquota3 = (15/100)*salarioBruto;
