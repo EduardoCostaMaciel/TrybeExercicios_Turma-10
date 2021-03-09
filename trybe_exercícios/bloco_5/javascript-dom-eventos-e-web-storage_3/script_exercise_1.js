@@ -16,4 +16,24 @@ function createDaysOfTheWeek() {
   // Escreva seu código abaixo.
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];;
 
-  
+// exe-1 Desenvolva uma função que crie dinamicamente cada dia do calendário
+// A - os adicione como filhos/filhas da tag <ul> com ID "days".
+// B - os dias 29 e 30 de novembro representam respectivamente Segunda-feira e Terça-feira.
+
+// Os dias devem estar contidos em uma tag <li> , e todos devem ter a classe day . Ex: <li class="day">3</li>
+
+// Os dias 24, 25 e 31 são feriados e, além da classe day , devem conter também a classe holiday . Ex: <li class="day holiday">24</li>
+
+// Os dias 4, 11, 18 e 25 são Sexta-feira. Eles devem conter a classe day e a classe friday . Ex: <li class="day friday">4</li>
+
+
+function criaDinamicDiasCalendario () {
+  let acessaDiasCalendario = document.querySelector('#dais');
+
+  for (let index = 0; index < dezDaysList.length; index += 1) {
+    let dia = dezDaysList[index];
+    let diaItem = document.createElement('li');
+
+
+  }
+}
