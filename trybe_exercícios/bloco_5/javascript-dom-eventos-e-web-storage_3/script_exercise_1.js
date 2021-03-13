@@ -13,8 +13,7 @@ function createDaysOfTheWeek() {
   
   createDaysOfTheWeek();
   
-  // Escreva seu código abaixo.
-  const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];;
+// Escreva seu código abaixo.
 
 // exe-1 Desenvolva uma função que crie dinamicamente cada dia do calendário
 // A - os adicione como filhos/filhas da tag <ul> com ID "days".
@@ -26,14 +25,43 @@ function createDaysOfTheWeek() {
 
 // Os dias 4, 11, 18 e 25 são Sexta-feira. Eles devem conter a classe day e a classe friday . Ex: <li class="day friday">4</li>
 
+// <div class="days-container">
+// <ul id="days">
+// </ul>
+// </div>
 
-function criaDinamicDiasCalendario () {
-  let acessaDiasCalendario = document.querySelector('#dais');
+const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];;
+
+function criaDinamicDiasCalendario() {
+  let getDaysList = document.querySelector('#days');
 
   for (let index = 0; index < dezDaysList.length; index += 1) {
-    let dia = dezDaysList[index];
-    let diaItem = document.createElement('li');
+    let day = dezDaysList[index];
+    let dayItem = document.createElement('li');
 
-
+    if (day === 24 || day === 31) {
+      dayItem.className ='day holiday';
+      dayItem.innerHTML = day;
+      getDaysList.appendChild(dayItem);
+    } else if (day === 4 || day === 11 || day === 18) {
+      dayItem.className = 'day friday';
+      dayItem.innerHTML = day;
+      getDaysList.appendChild(dayItem);
+    } else if (day === 25) {
+      dayItem.className = 'day holiday friday';
+      dayItem.innerHTML = day;
+      getDaysList.appendChild(dayItem);
+    } else {
+      dayItem.innerHTML = day;
+      dayItem.className = 'day';
+      getDaysList.appendChild(dayItem);
+    }
   }
 }
+criaDinamicDiasCalendario();
+
+/* Exercício 2
+Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
+Adicione a este botão a ID "btn-holiday" .
+Adicione este botão como filho/filha da tag <div> com classe "buttons-container" . */
+
