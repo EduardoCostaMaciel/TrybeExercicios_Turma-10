@@ -76,3 +76,67 @@ function criaBotao(nomeBotao) {
 }
 
 criaBotao('Feriados');
+
+/*Exercício 3
+Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
+É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)" .*/
+
+function mudaCorFeriados() {
+  let botaoTrocaCor = document.querySelector('#btn-holiday');
+  let diasFeriados = document.querySelectorAll('.holiday');
+  let backgroundColor = 'rgb(238,238,238)';
+  let novaCor = 'white';
+
+  botaoTrocaCor.addEventListener('click',function() {
+    for(let index = 0;index < diasFeriados.length; index += 1) {
+      if (diasFeriados[index].style.backgroundColor === novaCor) {
+        diasFeriados[index].style.backgroundColor = backgroundColor;
+      } else {
+        diasFeriados[index].style.backgroundColor = novaCor;
+      }
+    }
+  })
+}
+
+mudaCorFeriados()
+
+/*Exercício 4
+Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie dinamicamente um botão com o nome "Sexta-feira".
+Adicione a este botão o ID "btn-friday" .
+Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .*/
+
+function botaoSextou(string) {
+  let botaoSextaFeira = document.querySelector('.buttons-container');
+  let novoBotaoSexta = document.createElement('button');
+  let idNovoBotaoSexta = 'btn-friday';
+
+  novoBotaoSexta.innerHTML = string;
+  novoBotaoSexta.id = idNovoBotaoSexta;
+  botaoSextaFeira.appendChild(novoBotaoSexta);
+}
+
+botaoSextou('Sexta-feira');
+
+/*Exercício 5
+Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
+É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.*/
+
+function displayFridays(fridaysArray) {
+  let getFridayButton = document.querySelector('#btn-friday');
+  let fridays = document.getElementsByClassName('friday');
+  let newFridayText = 'SEXTOU o/';
+
+  getFridayButton.addEventListener('click', function() {
+  for (let index = 0; index < fridays.length; index += 1) {
+    if (fridays[index].innerHTML !== newFridayText) {
+        fridays[index].innerHTML = newFridayText;
+    } else {
+        fridays[index].innerHTML = fridaysArray[index];
+      }
+    }
+  })
+};
+
+let dezFridays = [ 4, 11, 18, 25 ];
+displayFridays(dezFridays);
+
