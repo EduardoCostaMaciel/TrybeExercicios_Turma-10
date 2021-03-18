@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Form-exercício</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Formulário de Currículo</h1>
+        </header>
+    </div>
+    <form action="" method="GET">
+        <fieldset>
+            <div class="field">
+            <label class="label" for="input-name">Full-Name</label>
+            <div class="control">
+                <input class="input" type="text" maxlength="40" placeholder="Digite seu Nome Completo" name="Full-name" id="input-name" required size="80%">
+            </div>
+            </div>
+            
+            <div class="field">
+            <label class="label" for="input-Email">E-Mail</label>
+            <div class="control">
+                <input class="input" type="email" maxlength="50" placeholder="Digite seu E-mail" name="E-Mail" id="input-Email" required size="80%">
+            </div>
+            </div>
+            
+            <div class="field">
+                <label class="label" for="input-cpf">CPF</label>
+                <div class="control">
+                    <input class="input" type="text" maxlength="11" placeholder="Digite seu CPF" name="CPF" id="input-cpf" required size="80%">
+                </div>
+            </div>
+            
+            <div class="field">
+                <label class="label" for="input-endereco">Endereço</label>
+                <div class="control">
+                    <input class="input" type="text" maxlength="200" placeholder="Digite seu endereço" name="Endereço" id="input-endereco" required size="80%">
+                </div>
+            </div>
+
+            <div class="field ">
+                <label class="label" for="input-cidade">Cidade</label>
+                <div class="control">
+                    <input class="input" type="text" maxlength="28" placeholder="Digite sua Cidade"   name="Cidade" id="input-cidade" required size="80%">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="input-estados">Estados</label>
+                <div class="select is-primary">
+                    <select multiple size="8" name="Estados" id="input-estados"></select>
+                </div>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Domicilio</legend>
+
+                    <label for="input-domicilio_1">Casa</label>
+                    <input type="radio" name="Moradia" id="input-domicilio_1" required checked>
+
+                    <label for="input-domicilio_2">Apartamento</label>
+                    <input type="radio" name="Moradia" id="input-domicilio_2" required>
+                </fieldset>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <legend>Últimos Empregos</legend>
+                <textarea name="resumo" maxlength="1000" id="textarea-resumo" cols="80" rows="10" required>Fale um pouco de suas experiências.</textarea>
+            </div>
+            <div>
+                <legend>Cargos</legend>
+                <textarea name="cargo" maxlength="40" id="textarea-cargo" cols="80" rows="3" required></textarea>
+            </div>
+
+            <div>
+                <legend>Descrições dos Cargos</legend>
+                <textarea name="Descrições" maxlength="500" id="textarea-descricoes" cols="80" rows="5" required></textarea>
+            </div>
+            <div>
+                <input type="text" value="" size="10%" name="data" id="input-data">
+            </div>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+
+
+<!--2-  Crie outro <fieldset> para dados do seu último emprego
+        Data de início - Texto
+        Verificar o formato da data dd/mm/aaaa .
+        O dia deve ser > 0 e <= 31.
+        O mês deve ser > 0 e <= 12.
+        O ano não pode ser negativo.
+        Caso alguma das condições for inválida no momento do envio do formulário, exibir mensagem de erro contextualizada.
+        Campo obrigatório
+-->
+<!--3-  Logo abaixo do formulário, crie um botão que:
+        Chame uma função JavaScript e interrompa o fluxo automático do form utilizando o preventDefault() .
+        Execute as validações que foram pedidas ao longo da montagem do formulário.
+        Monte uma <div> com o consolidado dos dados que foram inseridos no formulário.
+--> 
+<!--4-  Crie um botão Limpar que limpa todos os campos do formulário e a <div> com seu currículo também.
+-->
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
