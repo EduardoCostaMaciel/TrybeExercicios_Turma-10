@@ -21,17 +21,15 @@ const lesson3 = {
 };
 
 // Exercício - 1
-const adiciona = (lesson2, turno, valor) => lesson2.turno = valor;
+/*const adiciona = (lesson2, turno, valor) => lesson2.turno = valor;
 
 adiciona(lesson2, ['turno'], 'manhã');
-console.log(lesson2);
+console.log(lesson2);*/
 
 // Exercício - 2
-/*function listaKeys(objet) {
-  return Object.keys(objet);
-}
+const listaKeys = (objet) => Object.keys(objet);
 
-console.log(listaKeys(lesson3));*/
+console.log(listaKeys(lesson3));
   
 // Exercício - 3
 /*function tamanhoObjeto(object) {
