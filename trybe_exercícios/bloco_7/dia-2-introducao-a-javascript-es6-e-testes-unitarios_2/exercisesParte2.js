@@ -52,7 +52,7 @@ console.log(novoObjeto());
 
 // Exercício - 6
 
-/*function totalDeEstudantes(somaDosEstudantes) {
+const totalDeEstudantes = (somaDosEstudantes) => {
   const keys = Object.keys(somaDosEstudantes);
 
   let total = 0;
@@ -62,6 +62,6 @@ console.log(novoObjeto());
     total += somaDosEstudantes[percorreKeys].numeroEstudantes;
   }
   return total;
-}*/
+}
 
-//console.log(totalDeEstudantes(novoObjeto()));
+console.log(totalDeEstudantes(novoObjeto()));
