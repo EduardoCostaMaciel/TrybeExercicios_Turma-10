@@ -27,15 +27,14 @@ adiciona(lesson2, ['turno'], 'manhã');
 console.log(lesson2);*/
 
 // Exercício - 2
-const listaKeys = (objet) => Object.keys(objet);
+/*const listaKeys = (objet) => Object.keys(objet);
 
-console.log(listaKeys(lesson3));
+console.log(listaKeys(lesson3));*/
   
 // Exercício - 3
-/*function tamanhoObjeto(object) {
-  return Object.keys(object).length;
-}
-console.log(tamanhoObjeto(lesson2));*/
+const tamanhoObjeto = (object) => Object.keys(object).length;
+
+console.log(tamanhoObjeto(lesson2));
 
 /*const tamanhoObjeto = (objet) => Object.keys(objet).length;
 console.log(tamanhoObjeto(lesson2));*/
