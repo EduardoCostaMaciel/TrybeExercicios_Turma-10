@@ -32,20 +32,15 @@ console.log(lesson2);*/
 console.log(listaKeys(lesson3));*/
   
 // Exercício - 3
-const tamanhoObjeto = (object) => Object.keys(object).length;
+/*const tamanhoObjeto = (object) => Object.keys(object).length;
 
-console.log(tamanhoObjeto(lesson2));
-
-/*const tamanhoObjeto = (objet) => Object.keys(objet).length;
 console.log(tamanhoObjeto(lesson2));*/
 
 // Exercício - 4
 
-/*function listaDeValores(object) {
-  return Object.values(object);
-}
+const listaDeValores = (object) => Object.values(object);
 
-console.log(listaDeValores(lesson1));*/
+console.log(listaDeValores(lesson1));
 
 // Exercício - 5
 
