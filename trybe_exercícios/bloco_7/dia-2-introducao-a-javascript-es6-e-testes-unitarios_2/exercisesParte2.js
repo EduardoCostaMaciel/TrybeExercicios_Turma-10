@@ -38,17 +38,17 @@ console.log(tamanhoObjeto(lesson2));*/
 
 // Exercício - 4
 
-const listaDeValores = (object) => Object.values(object);
+/*const listaDeValores = (object) => Object.values(object);
 
-console.log(listaDeValores(lesson1));
+console.log(listaDeValores(lesson1));*/
 
 // Exercício - 5
 
-/*function novoObjeto() {
+const novoObjeto = () => {
   const allLessons = {};
   return Object.assign(allLessons, {lesson1, lesson2, lesson3}); 
 }
-console.log(novoObjeto());*/
+console.log(novoObjeto());
 
 // Exercício - 6
 
